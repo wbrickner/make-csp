@@ -26,6 +26,19 @@ const csp = makeCSP({
 // default-src 'none'; script-src https://abc.io https://xyz.com; style-src https://hey.net; connect-src http://io.io; 
 ```
 
+# Brief Documentation
+
+This module accepts an options object, with several recognized properties:
+
+- scripts
+- styles
+- images
+- connections
+
+Each is expected to be an array of URLs.
+
+Duplicate hosts are handled, and are not duplicated in the CSP.
+
 # License [ MIT ]
 
 ```text
