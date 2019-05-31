@@ -1,0 +1,31 @@
+{
+  "name": "make-csp",
+  "version": "1.0.0",
+  "description": "Quickly make a Content-Security-Policy string from a description object.  Does not support all directives.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wbrickner/make-csp.git"
+  },
+  "keywords": [
+    "CSP",
+    "make",
+    "csp",
+    "security"
+  ],
+  "author": "Will Brickner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wbrickner/make-csp/issues"
+  },
+  "homepage": "https://github.com/wbrickner/make-csp#readme",
+  "dependencies": {
+    "url-parse": "^1.4.7"
+  },
+  "peerDependencies": {
+    "url-parse": "^1.4.7"
+  }
+}
