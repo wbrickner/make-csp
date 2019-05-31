@@ -2,8 +2,11 @@ const self = require(".")
 
 console.log(
     self({
-        scripts: [ "https://google.com/fakescript.js", "https://twitter.com/some/bootstrap/junk.js" ],
-        styles: [ "https://facebook.com/react.css", "https://amazon.com/some/bootstrap/junk.css" ],
-        connections: [ "http://netflix.com/steal-my-data-please/" ]
+        scripts: [
+            "https://abc.io/script.js",
+            "https://xyz.com/library.js"
+        ],
+        styles: ["https://hey.net/style.css"],
+        connections: ["http://io.io/real-time"]
     })
 )
