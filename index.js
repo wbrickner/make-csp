@@ -8,6 +8,8 @@ const URL = require("url-parse")
 
 function extractHost(url = "") {
     const { origin } = new URL(url + "")
+    
+    if (origin === null || origin === "null") { return url }
     return origin
 }
 
