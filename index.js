@@ -39,6 +39,7 @@ module.exports = function makeCSP(options = {}) {
     if (options.styles && options.styles.length) { csp += `style-src ${uniqueHosts(options.styles).join(" ")}; ` }
     if (options.images && options.images.length) { csp += `img-src ${uniqueHosts(options.images).join(" ")}; ` }
     if (options.connections && options.connections.length) { csp += `connect-src ${uniqueHosts(options.connections).join(" ")}; ` }
+    if (options.frames && options.frames.length) { csp += `frame-src ${uniqueHosts(options.frames).join(" ")}` }
 
     return csp
 }
